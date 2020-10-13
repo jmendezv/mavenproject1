@@ -6,6 +6,7 @@
 package cat.copernic.mavenproject1;
 
 import junit.framework.TestCase;
+import org.junit.Test;
 
 /**
  *
@@ -30,8 +31,14 @@ public class CalculadoraTest extends TestCase {
     /**
      * Test of suma method, of class Calculadora.
      */
+    @Test
     public void testSuma() {
         assertEquals(5, Calculadora.suma(3, 2));
+    }
+    
+    @Test
+    public void testProducto() {
+        assertEquals(14, Calculadora.producto(2, 7));
     }
     
 }
